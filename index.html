@@ -83,7 +83,7 @@
             color: #666;
             font-family: "Microsoft YaHei";
         }
-        .pc .banner_main,.content_main{
+        .pc .banner_main,.pc .content_main{
             width: 1100px;
             margin: auto;
         }
@@ -133,9 +133,135 @@
             width: 100%;
             background-color: #3f3f3f;
         }
+
+
+        .m * {
+            font-size: 13px;
+        }
+        .m .header{
+            width: 100%;
+            height: 40px;
+            font-family: "Microsoft YaHei";
+            background-color: #f4f4f4;
+        }
+        .m .header_main {
+            width: 100%;
+            height: 40px;
+            margin: auto;
+            font-size: 12px;
+            color: #777;
+            line-height: 38px;
+            vertical-align: middle;
+        }
+        .m .header_main .index_v1 {
+            display: block;
+            float: left;
+            padding-left: 25px;
+        }
+        .m .header_main .index_v1 a {
+            color: #777777;
+        }
+        .m .header_main .index_v2 {
+            width: 135px;
+            float: right;
+            color: #777;
+            margin-left: 50px;
+            padding-left: 30px;
+        }
+        .m .nav{
+            width: 100%;
+            height: 80px;
+            color: #666;
+            font-family: "Microsoft YaHei";
+            background-color: #fff;
+            border-bottom: 1px solid #eeeeee;
+        }
+        .m .nav_main{
+            width: 100%;
+            height: 80px;
+            margin: auto;
+        }
+        .m .nav_main .logo{
+            margin-top: 15px !important;
+            float: left;
+            font-size: 27px;
+        }
+        .m .nav_main .logo img{
+            width: 140px;
+        }
+        .m .banner{
+            width: 100%;
+            color: #666;
+            font-family: "Microsoft YaHei";
+        }
+        .m .banner_main,.m .content_main{
+            width: 100%;
+            margin: auto;
+        }
+        .m .content{
+            width: 100%;
+            color: #666;
+            font-family: "Microsoft YaHei";
+        }
+        .m .content .xiang{
+            font-size: 30px;
+            color: #333;
+            font-weight: normal;
+            text-align: center;
+            margin-top: 75px;
+            margin-bottom: 40px;
+        }
+        .m .content_main img{
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+            -moz-box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+            -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+        }
+        .m .content_main .title{
+            font-size: 30px;
+            color: #333;
+            font-weight: bold;
+        }
+        .m .content_main .jia{
+            float: right;
+            font-size: 18px;
+            color: red;
+            font-weight: normal;
+        }
+        .m .content_main>.row>.col-xs-6{
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .m .content_main img.wei{
+            width: 100%;
+        }
+        .m .content_main img.hai{
+            width: 100%;
+        }
+        .m .footer{
+            height: 100px;
+            width: 100%;
+            background-color: #3f3f3f;
+        }
+        
     </style>
 </head>
 <body class="pc">
+<script>
+    function isPC(){
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+        }
+        return flag;
+    }
+    if (!isPC()) {
+        document.body.className ="m"
+    }
+</script>
 <div class="header">
     <div class="header_main">
         <p class="index_v1">
@@ -185,7 +311,7 @@
     <h1 class="xiang">你想学什么？</h1>
     <div class="content_main">
         <div class="row">
-            <div class="col-xs-6" onclick="window.location.href='1.html'">
+            <div class="col-md-6 col-xs-12" onclick="window.location.href='1.html?q=jichu'">
                 <div class="col-xs-6">
                     <img src="img/jichu.jpg">
                 </div>
@@ -195,7 +321,7 @@
                     <p class="jia">￥4280起</p>
                 </div>
             </div>
-            <div class="col-xs-6" onclick="window.location.href='2.html'">
+            <div class="col-md-6 col-xs-12" onclick="window.location.href='1.html?q=boyin'">
                 <div class="col-xs-6">
                     <img src="img/boyin.jpg">
                 </div>
@@ -205,7 +331,7 @@
                     <p class="jia">￥6280起</p>
                 </div>
             </div>
-            <div class="col-xs-6" onclick="window.location.href='3.html'">
+            <div class="col-md-6 col-xs-12" onclick="window.location.href='1.html?q=peiyin'">
                 <div class="col-xs-6">
                     <img src="img/peiyin.jpg">
                 </div>
@@ -215,7 +341,7 @@
                     <p class="jia">￥7280起</p>
                 </div>
             </div>
-            <div class="col-xs-6" onclick="window.location.href='4.html'">
+            <div class="col-md-6 col-xs-12" onclick="window.location.href='1.html?q=quanneng'">
                 <div class="col-xs-6">
                     <img src="img/quanneng.jpg">
                 </div>
