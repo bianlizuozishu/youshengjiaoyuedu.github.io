@@ -31,6 +31,13 @@ $(function(){
                 easing: 'smooth',
 
             });
+    $('#Grid1').mixitup({
+        targetSelector: '.mix',
+        filterSelector: '.filter',
+        effects: ['fade','blur'],
+        easing: 'smooth',
+
+    });
 });
     
 /*----------------------------------------------------*/

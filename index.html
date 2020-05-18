@@ -66,7 +66,18 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav" id="navigation">
                 <li><a href="/">有声教育</a></li>
-                <li><a href="/">课程</a></li>
+                <li><div class="dropdown zzzz">
+                    <a id="dLabel" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        课程
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="javascript:void(0)" onclick="c('jichu')">基础普通话</a></li>
+                        <li><a href="javascript:void(0)" onclick="c('boyin')">播音主持</a></li>
+                        <li><a href="javascript:void(0)" onclick="c('peiyin')">配音</a></li>
+                        <li><a href="javascript:void(0)" onclick="c('quanneng')">全能</a></li>
+                    </ul>
+                </div></li>
                 <li><a href="/">体验课</a></li>
                 <li><a href="/">教学体系</a></li>
                 <li><a href="/">关于我们</a></li>
@@ -74,367 +85,8 @@
         </div>
     </div>
 </nav>
-
 <!-- NAVBAR END -->
-
-<!-- SEQUENCE SLIDER Change Styles at the sequence-slider.css file -->
-
-<div id="top-slider">
-    <div class="slider-bg"></div>
-    <div class="container">
-
-        <div id="sequence">
-
-            <img class="sequence-prev" src="img/button-previous.svg" alt="Previous Frame"/>
-            <img class="sequence-next" src="img/button-next.svg" alt="Next Frame"/>
-
-            <ul class="sequence-canvas">
-                <li class="animate-in">
-                    <h2 class="title">有声教育</h2>
-                    <h3 class="subtitle">让兴趣成就更好的你</h3>
-                    <img class="slider-image" src="imgs/8c5b1e7f65003b13450fc79a8fb1ebc.png" alt="Image"/>
-                </li>
-            </ul>
-
-            <ul class="sequence-pagination">
-                <li><img src="img/pagination-dot.svg" alt="Image"/></li>
-            </ul>
-
-        </div>
-
-    </div>
-</div>
-
-<!-- SEQUENCE SLIDER END -->
-
-<!-- ABOUT US -->
-
-<div id="about">
-
-    <div class="container">
-
-        <div class="center-block head">
-
-            <h1>为什么选择有声教育？</h1>
-            <hr class="head-border-grey">
-
-        </div>
-
-        <div class="agency col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1">
-            <p>真人直播，还原真实教学场景</p>
-            <p>课堂录制，课后赠送录播课件</p>
-            <p>随时提问互动</p>
-            <p>支持电脑上课</p>
-            <p>支持移动端上课</p>
-        </div>
-
-        <!-- About Us Slider. Change Styles at the jquery.bxlsider.css file -->
-
-        <div class="col-lg-6 col-md-6">
-            <ul class="aboutus">
-
-                <li>
-                    <img class="img-responsive" src="imgs/wei1.jpg" alt="YOUR TEXT HERE">
-                </li>
-
-                <li>
-                    <img class="img-responsive" src="imgs/wei2.jpg" alt="YOUR TEXT HERE">
-                </li>
-
-                <li>
-                    <img class="img-responsive" src="imgs/wei3.jpg" alt="YOUR TEXT HERE">
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-</div>
-
-<!-- ABOUT END -->
-
-<!-- SERVICE -->
-
-<div id="service">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="center-block head">
-
-                <div class="col-lg-12 col-md-12 col-xs-12">
-
-                    <h1>你想学什么？</h1>
-                    <hr class="head-border-white">
-                    <p class="subhead">有声教育提供多种课程，满足不同学生的需求</p>
-                </div>
-
-            </div>
-
-            <!-- SERVICE COLUMNS -->
-            <div class="col-lg-6 col-md-6 service">
-                <div class="service-col">
-
-                    <div class="icon-desktop rotate">
-                        <img src="imgs/jichu.jpg" alt="" width="68%">
-                    </div>
-
-                    <h4>基础班</h4>
-                    <p>
-                        基础班&领略发声奥秘<br/>
-                        ￥4280起
-                    </p>
-
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 service">
-                <div class="service-col">
-
-                    <div class="icon-wrench rotate">
-                        <img src="imgs/boyin.jpg" alt="" width="68%">
-                    </div>
-
-                    <h4>播音班</h4>
-                    <p>基础班&练就万里挑一好声音<br/>￥6280起</p>
-
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 service">
-                <div class="service-col">
-
-                    <div class="icon-mobile rotate">
-                        <img src="imgs/peiyin.jpg" alt="" width="68%">
-                    </div>
-
-                    <h4>配音版</h4>
-                    <p>配音班&塑造百变声音<br/>￥7280起</p>
-
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6 service">
-                <div class="service-col">
-
-                    <div class="icon-mobile rotate">
-                        <img src="imgs/quanneng.jpg" alt="" width="68%">
-                    </div>
-
-                    <h4>全能班</h4>
-                    <p>全能班&成就声音大咖<br/>￥8580起</p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- SERVICE END -->
-
-<!-- PORTFOLIO -->
-
-<div id="portfolio">
-
-    <div class="container">
-
-
-        <div class="center-block head">
-
-            <div class="col-lg-12 col-md-12 col-xs-12">
-
-                <h1 class="d-grey">专业教师团队&优秀教务老师</h1>
-                <hr class="head-border-grey">
-
-            </div>
-
-        </div>
-        <div class="clearfix"></div>
-
-        <div id="Grid" class="row gallery">
-
-            <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
-                <div class="image">
-                    <div class="overlay">
-
-                        <div class="caption">
-                            <h5>小然老师</h5>
-                            <p>基础普通话授课老师</p>
-                        </div>
-
-                        <img class="img-responsive" src="imgs/laoshi1.png" alt=""/>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_2 all">
-                <div class="image">
-                    <div class="overlay">
-
-                        <div class="caption">
-                            <h5>罗簌老师</h5>
-                            <p>播音授课老师</p>
-                        </div>
-
-                        <img class="img-responsive" src="imgs/laoshi2.png" alt=""/>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_3 all">
-                <div class="image">
-                    <div class="overlay">
-
-                        <div class="caption">
-                            <h5>雪儿老师</h5>
-                            <p>主持授课老师</p>
-                        </div>
-
-                        <img class="img-responsive" src="imgs/laoshi3.png" alt=""/>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
-                <div class="image">
-                    <div class="overlay">
-
-                        <div class="caption">
-                            <h5>小鹿老师</h5>
-                            <p>配音优秀老师</p>
-                        </div>
-
-                        <img class="img-responsive" src="imgs/laoshi4.png" alt=""/>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
-                <div class="image">
-                    <div class="overlay">
-
-                        <div class="caption">
-                            <h5>小李老师</h5>
-                            <p>从事教育教务工作4年</p>
-                        </div>
-
-                        <img class="img-responsive" src="imgs/laoshi5.png" alt=""/>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
-                <div class="image">
-                    <div class="overlay">
-
-                        <div class="caption">
-                            <h5>小徐老师</h5>
-                            <p>从事教育服务工作6年</p>
-                        </div>
-
-                        <img class="img-responsive" src="imgs/laoshi6.png" alt=""/>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 images mix cat_1 all">
-                <div class="image">
-                    <div class="overlay">
-
-                        <div class="caption">
-                            <h5>小代老师</h5>
-                            <p>从事教育服务工作3年</p>
-                        </div>
-
-                        <img class="img-responsive" src="imgs/laoshi7.png" alt=""/>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-<div id="team">
-    <div class="container">
-
-        <div class="row">
-
-            <div class="center-block head">
-
-                <div class="col-lg-12 col-md-12 col-xs-12">
-
-                    <h1 class="">阶段学习、不过重学</h1>
-                    <hr class="head-border-white">
-                    <p class="subhead">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
-
-                </div>
-
-            </div>
-
-            <!-- TEAM MEMBER -->
-
-            <div class="col-lg-4 col-md-4">
-                <div class="team team-member1">
-
-                    <div class="member1 rotate"></div>
-
-                    <h5>基础普通话</h5>
-
-                    <p class="job">3个月</p>
-
-                    <p>基础概论、声调训练、<br/>
-                        语流音变、播音发声学、<br/>
-                        呼吸控制、口腔控制、<br/>
-                        喉部控制、共鸣控制、<br/>
-                        声音弹性及情气声训练、<br/>
-                        综合练习</p>
-                </div>
-
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-                <div class="team team-member2">
-
-                    <div class="member2 rotate"></div>
-
-                    <h5>播音主持</h5>
-
-                    <p class="job">3.5个月</p>
-
-                    <p>播音主持创作基础、语言表达<br/>
-                        电视播音、电视节目主持<br/>
-                        电台播音、小说演播、朗诵<br/>
-                        商业主持、综合训练<br/><br/><br/></p>
-                </div>
-
-            </div>
-
-            <div class="col-lg-4 col-md-4">
-                <div class="team team-member3">
-
-                    <div class="member3 rotate"></div>
-                    <h5>配音</h5>
-                    <p class="job">	4个月</p>
-                    <p>配音基础、塑造百变声音<br/>
-                        宣传片配音、纪录片配音<br/>
-                        广告片配音、动漫配音<br/>
-                        影视剧及电影配音、期末实践<br/><br/><br/></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- TEAM  END-->
-
-
-<!-- BOTTOM -->
-
+<div id="c"></div>
 <div id="foot">
 
     <div class="container">
@@ -447,7 +99,7 @@
                     <hr class="head-border-white">
 
                     <div class="">
-                        <p><i class="fa fa-location-arrow"><span>关于有声</span></i></p>
+                        <p><i class="fa fa-location-arrow"><a href="javascript:void(0)" onclick="c('guanyu')">关于有声</a></i></p>
                         <p><i class="fa fa-map-marker"><span>商务合作	</span></i></p>
                     </div>
 
@@ -486,70 +138,504 @@
 
 </div>
 
-<!-- FOOTER END -->
+<script type="text/html" id="index">
 
-<!-- COLOR SWITCH. Change Styles at the color.switch.css file -->
+    <div id="top-slider">
+        <div class="slider-bg"></div>
+        <div class="container">
 
-<!--<div class="editor">
+            <div id="sequence">
 
-    <div class="panel">
+                <img class="sequence-prev" src="img/button-previous.svg" alt="Previous Frame"/>
+                <img class="sequence-next" src="img/button-next.svg" alt="Next Frame"/>
 
-        <h5>Choose your Color</h5>
+                <ul class="sequence-canvas">
+                    <li class="animate-in">
+                        <h2 class="title">有声教育</h2>
+                        <h3 class="subtitle">让兴趣成就更好的你</h3>
+                        <img class="slider-image" src="imgs/8c5b1e7f65003b13450fc79a8fb1ebc.png" alt="Image"/>
+                    </li>
+                </ul>
 
-        <div id="changecss">
-
-            <div class="row">
-
-                <div class="circle-skin"><a href="javascript: void(0)" title="switch styling" id="theme1">
-                    <div class="left skin1-l"></div>
-                    <div class="right skin1-r"></div>
-                </a></div>
-
-                <div class="circle-skin"><a href="javascript: void(0)" title="switch styling" id="theme2">
-                    <div class="left skin2-l"></div>
-                    <div class="right skin2-r"></div>
-                </a></div>
-
-                <div class="circle-skin"><a href="javascript: void(0)" title="switch styling" id="theme3">
-                    <div class="left skin3-l"></div>
-                    <div class="right skin3-r"></div>
-                </a></div>
-
-                <div class="circle-skin"><a href="javascript: void(0)" title="switch styling" id="theme4">
-                    <div class="left skin4-l"></div>
-                    <div class="right skin4-r"></div>
-                </a></div>
-
-                <div class="circle-skin"><a href="javascript: void(0)" title="switch styling" id="theme5">
-                    <div class="left skin5-l"></div>
-                    <div class="right skin5-r"></div>
-                </a></div>
-
-                <div class="circle-skin"><a href="javascript: void(0)" title="switch styling" id="theme6">
-                    <div class="left skin6-l"></div>
-                    <div class="right skin6-r"></div>
-                </a></div>
+                <ul class="sequence-pagination">
+                    <li><img src="img/pagination-dot.svg" alt="Image"/></li>
+                </ul>
 
             </div>
 
         </div>
+    </div>
+    <!-- ABOUT US -->
 
-        <div class="clearfix"></div>
+    <div id="about">
 
+        <div class="container">
 
+            <div class="center-block head">
+
+                <h1>为什么选择有声教育？</h1>
+                <hr class="head-border-grey">
+
+            </div>
+
+            <div class="agency col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1">
+                <p>真人直播，还原真实教学场景</p>
+                <p>课堂录制，课后赠送录播课件</p>
+                <p>随时提问互动</p>
+                <p>支持电脑上课</p>
+                <p>支持移动端上课</p>
+            </div>
+
+            <!-- About Us Slider. Change Styles at the jquery.bxlsider.css file -->
+
+            <div class="col-lg-6 col-md-6">
+                <ul class="aboutus">
+
+                    <li>
+                        <img class="img-responsive" src="imgs/wei1.jpg" alt="YOUR TEXT HERE">
+                    </li>
+
+                    <li>
+                        <img class="img-responsive" src="imgs/wei2.jpg" alt="YOUR TEXT HERE">
+                    </li>
+
+                    <li>
+                        <img class="img-responsive" src="imgs/wei3.jpg" alt="YOUR TEXT HERE">
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
     </div>
 
-    <div class="switch">
-        <i class="fa fa-cog fa-spin fa-2x"></i>
+    <!-- ABOUT END -->
+
+    <!-- SERVICE -->
+
+    <div id="service">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="center-block head">
+
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+
+                        <h1>你想学什么？</h1>
+                        <hr class="head-border-white">
+                        <p class="subhead">有声教育提供多种课程，满足不同学生的需求</p>
+                    </div>
+
+                </div>
+
+                <!-- SERVICE COLUMNS -->
+                <div class="col-lg-6 col-md-6 service">
+                    <div class="service-col">
+
+                        <div class="icon-desktop rotate">
+                            <img src="imgs/jichu.jpg" alt="" width="68%">
+                        </div>
+
+                        <h4>基础班</h4>
+                        <p>
+                            基础班&领略发声奥秘<br/>
+                            ￥4280起
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 service">
+                    <div class="service-col">
+
+                        <div class="icon-wrench rotate">
+                            <img src="imgs/boyin.jpg" alt="" width="68%">
+                        </div>
+
+                        <h4>播音班</h4>
+                        <p>基础班&练就万里挑一好声音<br/>￥6280起</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-md-6 service">
+                    <div class="service-col">
+
+                        <div class="icon-mobile rotate">
+                            <img src="imgs/peiyin.jpg" alt="" width="68%">
+                        </div>
+
+                        <h4>配音版</h4>
+                        <p>配音班&塑造百变声音<br/>￥7280起</p>
+
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 service">
+                    <div class="service-col">
+
+                        <div class="icon-mobile rotate">
+                            <img src="imgs/quanneng.jpg" alt="" width="68%">
+                        </div>
+
+                        <h4>全能班</h4>
+                        <p>全能班&成就声音大咖<br/>￥8580起</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-</div>-->
+    <!-- SERVICE END -->
 
-<!-- COLOR SWITCH END -->
+    <!-- PORTFOLIO -->
 
-<!-- END PRIMARY LAYOUT
-====================== -->
+    <div id="portfolio">
 
+        <div class="container">
+
+
+            <div class="center-block head">
+
+                <div class="col-lg-12 col-md-12 col-xs-12">
+
+                    <h1 class="d-grey">专业教师团队&优秀教务老师</h1>
+                    <hr class="head-border-grey">
+
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+
+            <div id="Grid" class="row gallery">
+
+                <div class="col-lg-3 col-md-6 col-sm-6 images mix cat_1 all">
+                    <div class="image">
+                        <div class="overlay">
+
+                            <div class="caption">
+                                <h5>小然老师</h5>
+                                <p>基础普通话授课老师</p>
+                            </div>
+
+                            <img class="img-responsive" src="imgs/laoshi1.png" alt=""/>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 images mix cat_2 all">
+                    <div class="image">
+                        <div class="overlay">
+
+                            <div class="caption">
+                                <h5>罗簌老师</h5>
+                                <p>播音授课老师</p>
+                            </div>
+
+                            <img class="img-responsive" src="imgs/laoshi2.png" alt=""/>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 images mix cat_3 all">
+                    <div class="image">
+                        <div class="overlay">
+
+                            <div class="caption">
+                                <h5>雪儿老师</h5>
+                                <p>主持授课老师</p>
+                            </div>
+
+                            <img class="img-responsive" src="imgs/laoshi3.png" alt=""/>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6 images mix cat_1 all">
+                    <div class="image">
+                        <div class="overlay">
+
+                            <div class="caption">
+                                <h5>小鹿老师</h5>
+                                <p>配音优秀老师</p>
+                            </div>
+
+                            <img class="img-responsive" src="imgs/laoshi4.png" alt=""/>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 images mix cat_1 all">
+                    <div class="image">
+                        <div class="overlay">
+
+                            <div class="caption">
+                                <h5>小李老师</h5>
+                                <p>从事教育教务工作4年</p>
+                            </div>
+
+                            <img class="img-responsive" src="imgs/laoshi5.png" alt=""/>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 images mix cat_1 all">
+                    <div class="image">
+                        <div class="overlay">
+
+                            <div class="caption">
+                                <h5>小徐老师</h5>
+                                <p>从事教育服务工作6年</p>
+                            </div>
+
+                            <img class="img-responsive" src="imgs/laoshi6.png" alt=""/>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 images mix cat_1 all">
+                    <div class="image">
+                        <div class="overlay">
+
+                            <div class="caption">
+                                <h5>小代老师</h5>
+                                <p>从事教育服务工作3年</p>
+                            </div>
+
+                            <img class="img-responsive" src="imgs/laoshi7.png" alt=""/>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="team">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="center-block head">
+
+                    <div class="col-lg-12 col-md-12 col-xs-12">
+
+                        <h1 class="">阶段学习、不过重学</h1>
+                        <hr class="head-border-white">
+                        <p class="subhead">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+
+                    </div>
+
+                </div>
+
+                <!-- TEAM MEMBER -->
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="team team-member1">
+
+                        <div class="member1 rotate"></div>
+
+                        <h5>基础普通话</h5>
+
+                        <p class="job">3个月</p>
+
+                        <p>基础概论、声调训练、<br/>
+                            语流音变、播音发声学、<br/>
+                            呼吸控制、口腔控制、<br/>
+                            喉部控制、共鸣控制、<br/>
+                            声音弹性及情气声训练、<br/>
+                            综合练习</p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="team team-member2">
+
+                        <div class="member2 rotate"></div>
+
+                        <h5>播音主持</h5>
+
+                        <p class="job">3.5个月</p>
+
+                        <p>播音主持创作基础、语言表达<br/>
+                            电视播音、电视节目主持<br/>
+                            电台播音、小说演播、朗诵<br/>
+                            商业主持、综合训练<br/><br/><br/></p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="team team-member3">
+
+                        <div class="member3 rotate"></div>
+                        <h5>配音</h5>
+                        <p class="job">	4个月</p>
+                        <p>配音基础、塑造百变声音<br/>
+                            宣传片配音、纪录片配音<br/>
+                            广告片配音、动漫配音<br/>
+                            影视剧及电影配音、期末实践<br/><br/><br/></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="price">
+
+        <div class="container">
+
+
+            <div class="center-block head">
+
+                <div class="col-lg-12 col-md-12 col-xs-12">
+
+                    <h1 class="d-grey">高效学习</h1>
+                    <hr class="head-border-grey">
+
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+
+            <div id="Grid1" class="row gallery">
+
+                <div class="col-lg-4 col-md-4 col-sm-4 images mix cat_1 all">
+                    <div class="image">
+                        <div class="overlay">
+                            <img style="width: 100%" class="img-responsive" src="imgs/x1.jpg" alt=""/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 images mix cat_2 all">
+                    <div class="image">
+                        <div class="overlay">
+
+                            <img style="width: 100%" class="img-responsive" src="imgs/x2.jpg" alt=""/>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-4 images mix cat_3 all">
+                    <div class="image">
+                        <div class="overlay">
+                            <img style="width: 100%" class="img-responsive" src="imgs/x3.jpg" alt=""/>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- BOTTOM -->
+</script>
+<script type="text/html" id="jichu">
+    <div id="about">
+        <div class="container">
+            <div class="center-block head">
+                <h1>基础班</h1>
+                <hr class="head-border-grey">
+            </div>
+        </div>
+        <div style="text-align: center">
+            <img src="imgs/jichu/jichu1.png"  alt=""/>
+            <img src="imgs/jichu/jichu2.jpg"  alt=""/>
+            <img src="imgs/jichu/jichu3.png"  alt=""/>
+            <img src="imgs/jichu/jichu3.jpg"  alt=""/>
+            <img src="imgs/jichu/jichu4.jpg"  alt=""/>
+            <img src="imgs/jichu/jichu5.jpg"  alt=""/>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="boyin">
+    <div id="about">
+        <div class="container">
+            <div class="center-block head">
+                <h1>播音班</h1>
+                <hr class="head-border-grey">
+            </div>
+        </div>
+        <div style="text-align: center">
+            <img src="imgs/boyin/1.jpg"  alt=""/>
+            <img src="imgs/boyin/2.jpg"  alt=""/>
+            <img src="imgs/boyin/3.jpg"  alt=""/>
+            <img src="imgs/jichu/jichu4.jpg"  alt=""/>
+            <img src="imgs/jichu/jichu5.jpg"  alt=""/>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="peiyin">
+    <div id="about">
+        <div class="container">
+            <div class="center-block head">
+                <h1>配音班</h1>
+                <hr class="head-border-grey">
+            </div>
+        </div>
+        <div style="text-align: center">
+            <img src="imgs/peiyin/1.jpg"  alt=""/>
+            <img src="imgs/peiyin/2.jpg"  alt=""/>
+            <img src="imgs/peiyin/3.jpg"  alt=""/>
+            <img src="imgs/jichu/jichu4.jpg"  alt=""/>
+            <img src="imgs/jichu/jichu5.jpg"  alt=""/>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="quanneng">
+    <div id="about">
+        <div class="container">
+            <div class="center-block head">
+                <h1>全能班</h1>
+                <hr class="head-border-grey">
+            </div>
+        </div>
+        <div style="text-align: center">
+            <img src="imgs/quanneng/1.png"  alt=""/>
+            <img src="imgs/quanneng/2.jpg"  alt=""/>
+            <img src="imgs/quanneng/3.jpg"  alt=""/>
+            <img src="imgs/jichu/jichu4.jpg"  alt=""/>
+            <img src="imgs/jichu/jichu5.jpg"  alt=""/>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="guanyu">
+    <div id="about">
+        <div class="container">
+            <div class="center-block head">
+                <h1>关于我们</h1>
+                <hr class="head-border-grey">
+            </div>
+        </div>
+        <div style="text-align: center">
+            <img src="imgs/guanyu/1.jpg"  alt=""/>
+            <img src="imgs/guanyu/2.jpg"  alt=""/>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="gongkaike">
+    <div id="about">
+        <div class="container">
+            <div class="center-block head">
+                <h1><a href="javascript:void(0)" onclick="c('gongkaike')">公开课</a></h1>
+                <hr class="head-border-grey">
+            </div>
+        </div>
+        <div style="text-align: center">
+            <img src="imgs/gongkeike/1.jpg"  alt=""/>
+            <img src="imgs/gongkeike/2.jpg"  alt=""/>
+        </div>
+    </div>
+</script>
 
 <!-- JAVASCRIPT
 ================================================== -->
@@ -591,7 +677,23 @@
 
 <!-- Retina JS -->
 <script type="text/javascript" src="js/retina-1.1.0.min.js"></script>
+<script>
+    function q(){
+        $("#c").html("");
+        var url = document.location.toString();
+        if (url.indexOf("#")===-1) {
+            $("#c").html($("#index").text())
+        }else{
+            $("#c").html($("#"+url.split("#")[1]).text())
+        }
+    }
 
+    q();
+    function c(url) {
+        history.pushState(null, null, "#"+url);
+        q();
+    }
+</script>
 
 </body>
 </html>
